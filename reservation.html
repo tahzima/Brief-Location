@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>T.I Location</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/styleReservation.css" />
+	</head>
+	<body>
+    <!-- Header -->
+	<!-- Nav -->
+	<div class="menu-bar">
+		<div>
+			<img src="Images/logo.png" alt="TI Location" class="logo">
+		</div>
+		<div id="mydivcente">
+			<ul>
+				<li><a href="index.html">Acceuile</a></li>
+				<li><a href="gallerie.html">Gallerie</a></li>
+				<li class="active"><a href="reservation.html">Résérvation</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="mydivright">
+			<img src="Images/search_icon.png" alt="search">
+		</div>
+	</div>
+
+	<!-- body -->
+	<div>
+		<div id="test"  class="some-cars">
+			<div id="type">
+				<p>Moto</p>
+				<img src="Images/motos4.jpg" alt="Moto" id="moto" class="slide" onclick="validerImages('moto')">
+			</div>
+			<div id="type">
+				<p>Compact</p>
+				<img src="Images/compact3.jpeg" alt="Compact" class="slide" id="compact" onclick="validerImages('compact')">
+			</div>
+			<div id="type">
+				<p>Citadin</p>
+				<img src="Images/abarth.jpg" alt="Citadin" class="slide" id="citadin" onclick="validerImages('citadin')">
+			</div>
+			<div id="type">
+				<p>Utilitaire</p>
+				<img src="Images/utilitaire3.jpg" alt="Utilitaire" class="slide" id="utilitaire" onclick="validerImages('utilitaire')">
+			</div>
+			<div id="type">
+				<p>Berlin</p>
+				<img src="Images/giulia.jpg" alt="Sedin/Berlin" class="slide" id="berlin" onclick="validerImages('berlin')">
+			</div>
+			<div id="type">
+				<p>Camion</p>
+				<img src="Images/camion1.jpg" alt="Camion" class="slide" id="camion" onclick="validerImages('camion')">
+			</div>
+			<div id="type">
+				<p>Engin de Chantier</p>
+				<img src="Images/engin de chantier2.jpg" class="slide" alt="Engin de Chantier" id="engin" onclick="validerImages('engin')">
+			</div>
+		</div>
+		<div id="t">
+			<div>
+				<input type="radio" id="essence" value="essence" class="myinput" name="inpCarburant">
+				<label>Essence</label>
+				<input type="radio" id="diesel" value="diesel" class="myinput" name="inpCarburant">
+				<label>Diesel</label>
+				<input type="radio" id="electrique" value="electrique" class="myinput" name="inpCarburant">
+				<label>Electrique</label>
+				<input type="radio" id="hybride" value="hybride" class="myinput" name="inpCarburant">
+				<label>Hybride</label><br>
+			</div>
+			<div>
+				<input type="radio" id="manuelle" value="manuelle" class="myinput" name="inpBoite">
+				<label>Manuelle</label>
+				<input type="radio" id="automatique" value="automatique" class="myinput" name="inpBoite">
+				<label>Automatique</label>
+			</div>
+			<div class="divGlobale">
+				<label>(Nombre de jours)</label>
+				<input type="number" id="nbJour" value="" min="1">
+			</div>
+			<div class="divGlobale">
+				<label>Prix total</label>
+				<span id="result"></span>
+			</div>
+			<div>
+				<input type="button" value="Calculer"  id="btnCalculer" onclick="calculer()">
+			</div>
+		</div>
+	</div>
+	<!--  footer -->
+	
+	<div class="menu-bar-bottom">
+		<div>
+			<img src="Images/instagram.png" alt="instagram" class="img">
+			<img src="Images/facebook.png" alt="instagram" class="img">
+			<img src="Images/Twitter.png" alt="instagram" class="img">
+			<img src="Images/linkedin.png" alt="instagram" class="img">
+		</div>
+		<div id="mydivcente">
+			<p>E-Mail       : TI.Location@gmail.Com</p>
+			<p>Téléphone : +212603040592</p>
+			<p>Adresse      : 23 Bloc 15 Qu Saada , SAFI</p>
+		</div>
+		<div id="mydivrightLogo">
+			<img src="Images/logo.png" alt="TI Locaton" class="logo">
+		</div>
+	</div>
+
+	<script src="JS/reservation-js.js"></script>
+	</body>
+</html>

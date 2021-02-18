@@ -1,0 +1,238 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: left top;
+    font-family: Roboto, sans-serif;
+}
+.menu-bar-bottom{
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+    background: black;
+    text-align: center;
+}
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background: black;
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+ 
+}
+.menu-bar ul li {
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+.menu-bar ul li a {
+    font-family: Tempus Sans ITC;
+    text-decoration: none;
+    
+}
+a{
+    color: #fff;
+}
+.active a{
+    background-color: #181919;
+    border-radius: 3px;
+    color: #E68F29;
+}
+.active,
+.menu-bar ul li a:hover {
+    background-color: #181919;
+    border-radius: 3px;
+    color: #E68F29;
+}
+.logo{
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 100px;
+    height: 60px;
+}
+.img{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+}
+#mydivcente{
+    position: relative;
+    left: 20%;
+    padding-top: 1px;
+    margin-bottom: 10px;
+    font-family: Tempus Sans ITC;
+    color: #E68F29;
+}
+#mydivcente p{
+    margin: 2px;
+}
+#mydivright{
+    margin-top: 30px;
+    position: relative;
+    left: 530px;
+}
+#mydivrightLogo{
+    margin-top: 10px;
+    position: relative;
+    left: 530px;
+}
+.mySlides {
+    display:none;
+}
+.content{
+    width: 100%;
+    height: 100px;
+}
+.contantP{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Vivaldi;
+    color: #E68F29;
+}
+#slideSize{
+    position: relative;
+    left: 25%;
+    width: 700px;
+    height: 470px;
+}
+p{
+    text-align: center;
+    color: #E68F29;
+    font-size: 20px;
+    font-family: Tempus Sans ITC;
+}
+#type{
+    display: flex;
+    width: 180px;
+    flex-direction: column-reverse;
+    height: 110px;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    margin-left: 0.5px;
+}
+.myinput{
+    background-color: white;
+    margin-bottom: 40px;
+}
+label{
+    font-family: Tempus Sans ITC;
+    font-size: 20px;
+}
+#t{
+    position: relative;
+    margin-left: 33%;
+    margin-bottom: 50px;
+}
+.divGlobale{
+    margin-bottom: 30px;
+}
+#btnCalculer{
+    margin-left: 170px;
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    border-color: teal;
+    border-width: 2px;
+    font-size: 30px;
+    font-family: Tempus Sans ITC;
+    color: #E68F29;
+}
+#btnCalculer:hover{
+    color: thistle;
+    background-color: black;
+    border: none;
+}
+label{
+    text-align: center;
+    font-size: 30px;
+    font-family: Tempus Sans ITC;
+    color: #E68F29;
+    margin-right: 10px;
+}
+.divGlobale input{
+    height: 20px;
+}
+#nbJour, #prixtt{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 4px;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+}
+#test{
+    display: flex;
+}
+.some-cars {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    height: 250px;
+}
+.slide {
+    display: inline-block;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+.some-cars::-webkit-scrollbar {
+    display:none;
+}
+@media screen and (max-width: 600px) {
+    #mydivcente{
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        font-family: Tempus Sans ITC;
+        color: #E68F29;
+        margin-top: 0;
+        text-align: center;
+    }
+    #mydivright{
+        display: none;
+    }
+    ul{
+        margin-left: 0;
+    }
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 130px;
+        background-color: black;
+        text-align: left;
+    }
+    .logo{
+        display: flex;
+        margin-top: 0;
+        margin-left: 250px;
+        padding: 0;
+        width: 100px;
+        height: 60px;
+    }
+    .menu-bar-bottom{
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        background: black;
+        text-align: center;
+    }
+    #mydivrightLogo{
+        margin-top: 0px;
+        position: relative;
+        left: 0;
+    }
+    #t{
+        position: relative;
+        margin-left: 2%;
+        margin-bottom: 50px;
+    }
+}

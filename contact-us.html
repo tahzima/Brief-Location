@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>T.I Location</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/styleContact.css" />
+	</head>
+	<body>
+    <!-- Header -->
+	<!-- Nav -->
+	<div class="menu-bar">
+		<div>
+			<img src="Images/logo.png" alt="TI Location" class="logo">
+		</div>
+		<div id="mydivcente">
+			<ul>
+				<li><a href="index.html">Acceuile</a></li>
+				<li><a href="gallerie.html">Gallerie</a></li>
+				<li><a href="reservation.html">Résérvation</a></li>
+				<li class="active"><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="mydivright">
+			<img src="Images/search_icon.png" alt="search">
+		</div>
+	</div>
+
+	<!-- body -->
+
+	<main>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Nom:</label></td>
+                    <td>
+                        <input type="text" id="nom">
+                        <br><label id="erreurnom"></label>
+                    </td>
+                    <td><label>Prenom:</label></td>
+                    <td>
+                        <input type="text" id="prenom">
+                        <br><label id="erreurprenom"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td>
+                        <input type="email" id="email">
+                        <br><label id="erreuremail"></label>
+                    </td>
+                    <td><label>Sujet:</label></td>
+                    <td>
+                        <input type="text" id="sujet">
+                        <br><label id="erreursujet"></label>
+                    </td>
+                </tr>
+            </table>
+            <div class="message">
+                <label class="lastshild">Message</label>
+            	<textarea  cols="30" rows="10" id="message"></textarea>
+            	<br><label id="erreurmessage"></label>
+            </div>
+            <input type="button" value="Envoyer" class="btn" onclick="valider()">
+        </form>
+    </main>
+
+	<!--  footer -->
+	
+	<div class="menu-bar-bottom">
+		<div>
+			<img src="Images/instagram.png" alt="instagram" class="img">
+			<img src="Images/facebook.png" alt="instagram" class="img">
+			<img src="Images/Twitter.png" alt="instagram" class="img">
+			<img src="Images/linkedin.png" alt="instagram" class="img">
+		</div>
+		<div id="mydivcente">
+			<p>E-Mail       : TI.Location@gmail.Com</p>
+			<p>Téléphone : +212603040592</p>
+			<p>Adresse      : 23 Bloc 15 Qu Saada , SAFI</p>
+		</div>
+		<div id="mydivrightLogo">
+			<img src="Images/logo.png" alt="TI Locaton" class="logo">
+		</div>
+	</div>
+
+	<script src="JS/Valider.js"></script>
+	</body>
+</html>
