@@ -38,6 +38,8 @@ function radioChecked(){
     radioHybride.checked=false;
     radioManuelle.checked=false;
     radioAutomatique.checked=false;
+    document.getElementById("nbJour").value="";
+    document.getElementById("result").innerHTML="";
 }
 
 function calculePrixTypeVehicule(type){
