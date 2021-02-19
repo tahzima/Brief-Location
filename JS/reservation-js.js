@@ -185,15 +185,24 @@ function calculer(){
             getPourcentageBoite(radioManuelle.value);
 
         }else if((radioManuelle.checked == false && radioAutomatique.checked == false) && typeSelectionner == "moto"){
-            res=parseFloat((parseFloat(prixTypeVehicule) + parseFloat(pourcentageCarburant))*parseFloat(nombreJours));
-            document.getElementById("result").innerHTML = res;
-
+            if(nombreJours>=1){
+                res=parseFloat((parseFloat(prixTypeVehicule) + parseFloat(pourcentageCarburant))*parseFloat(nombreJours));
+                document.getElementById("result").innerHTML = res;
+            }else{
+                alert("Le nombre des jours doivent etre positive");
+                document.getElementById("nbJour").value="";
+            }
         }else{
             alert("vous devez choisir un type de boite vitesse");
         }
-
-        res=parseFloat((parseFloat(prixTypeVehicule) + parseFloat(pourcentageCarburant) + parseFloat(pourcentageBoite))*parseFloat(nombreJours));
-        document.getElementById("result").innerHTML = res;
+        if(nombreJours>=1){
+            res=parseFloat((parseFloat(prixTypeVehicule) + parseFloat(pourcentageCarburant) + parseFloat(pourcentageBoite))*parseFloat(nombreJours));
+            document.getElementById("result").innerHTML = res;
+        }else{
+            alert("Le nombre des jours doivent etre positive");
+            document.getElementById("nbJour").value="";
+        }
+        
     }else{
         alert("vous devez selectionner type de vehicule");
     }
