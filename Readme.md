@@ -1,2 +1,2 @@
 lien du hosting : 
-https://serene-austin-12f2ea.netlify.app
+https://angry-meninsky-5e311d.netlify.app
