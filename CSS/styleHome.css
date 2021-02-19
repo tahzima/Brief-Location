@@ -103,7 +103,7 @@ a{
     position: relative;
     left: 530px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     #mydivcente{
         display: flex;
         flex-direction: column;
@@ -112,34 +112,36 @@ a{
         color: #E68F29;
         margin-top: 0;
         text-align: center;
+        padding-left: 0;
     }
     #mydivright{
         display: none;
     }
     ul{
         margin-left: 0;
+        padding-left: 0;
     }
     .menu-bar {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 140px;
+        height: 150px;
         background-color: black;
-        text-align: left;
+        text-align: center;
     }
     .logo{
         display: flex;
         margin-top: 0;
-        margin-left: 250px;
+        margin-left: 130px;
         padding: 0;
         width: 100px;
         height: 60px;
     }
     #slideSize{
         position: relative;
-        left: 5%;
-        width: 550px;
-        height: 380px;
+        left: 0;
+        width: 100%;
+        height: 300px;
     }
     .menu-bar-bottom{
         display: flex;
@@ -147,6 +149,7 @@ a{
         height: 200px;
         background: black;
         text-align: center;
+        width: 100%;
     }
     #mydivrightLogo{
         margin-top: 10px;
